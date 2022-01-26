@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Say My Name</title>
+    <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__links-list">
+                    <li class="nav__link">
+                        <a href="/">Привітатись</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="/all_user_data">Вже привітались</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            {% block content %}
+            {% endblock content %}
+        </main>
+
+        <footer class="footer">
+            <p>Hello, World!</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', path='/js/index.js') }}"></script>
+</body>
+
+</html>
