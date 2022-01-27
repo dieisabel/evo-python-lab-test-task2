@@ -78,7 +78,7 @@ $ docker build -t application:1.0.0 .
 Run Docker container:
 
 ```bash
-$ docker run -d --rm --name application -p 8000:8000/tcp application
+$ docker run -d --rm --name application -p 8000:8000/tcp application:1.0.0
 ```
 
 ### Deployment
