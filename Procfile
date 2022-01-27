@@ -1,0 +1,1 @@
+web: sh -c 'cd ./src/app/ && python server.py'
