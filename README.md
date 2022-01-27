@@ -4,9 +4,8 @@
 
 1. [Description](#description)
 2. [Installation](#installation)
-3. [Start server](#start-server)
-4. [Deployment](#deployment)
-5. [Production](#production)
+3. [Deployment](#deployment)
+4. [Production](#production)
 
 ### Description
 
@@ -32,6 +31,8 @@ All source code located in `src/` directory:
 
 ### Installation
 
+#### Manual
+
 Clone project: 
 
 ```bash
@@ -54,15 +55,31 @@ Install dependencies from `requirements.txt` using pip:
 $ pip install -r ./requirements.txt
 ```
 
-### Start server
-
 Cd to application root and start server using `server.py`:
 
 ```bash
 $ cd ./src/app/ && python server.py
 ```
 
-Uvicorn server will be running on `0.0.0.0:8000`.
+#### Docker
+
+Clone project: 
+
+```bash
+$ git clone https://github.com/dieisabel/evo-python-lab-test-task2
+```
+
+Build Docker container:
+
+```bash
+$ docker build -t application:1.0.0 .
+```
+
+Run Docker container:
+
+```bash
+$ docker run -d --rm --name application -p 8000:8000/tcp application
+```
 
 ### Deployment
 

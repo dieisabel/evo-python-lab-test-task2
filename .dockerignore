@@ -1,0 +1,17 @@
+# Git related files
+.gitignore
+
+# File for deployment
+Procfile
+runtime.txt
+
+# Docs
+README.md
+
+# Virtual environment
+venv
+.venv
+
+# Cache files
+*.pyc
+__pycache__
